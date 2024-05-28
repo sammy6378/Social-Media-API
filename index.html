@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Frontend Mentor | Social-Media-Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo">
+          <h1>Dashboard</h1>
+          <span>Total Followers: 23,004</span>
+        </div>
+        <div class="toggle">
+          <p>Dark Mode</p>
+          <label id="checked">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <main>
+        <div class="box-followers">
+          <div class="box-followers-header">
+            <img src="./images/icon-facebook.svg" alt="facebook-icon">
+            <span id="name">@nathanf</span>
+          </div>
+          <div class="box-followers-body">
+            <h1 class="fb-followers"></h1>
+            <p>Followers</p>
+          </div>
+          <div class="box-followers-footer">
+            <img src="./images/icon-up.svg" alt="">
+            <p>12 Today</p>
+          </div>
+        </div>
+
+        <div class="box-followers">
+          <div class="box-followers-header">
+            <img src="./images/icon-twitter.svg" alt="facebook-icon">
+            <span>@nathanf</span>
+          </div>
+          <div class="box-followers-body">
+            <h1 id="twitterFollowers">120</h1>
+            <p>Followers</p>
+          </div>
+          <div class="box-followers-footer">
+            <img src="./images/icon-up.svg" alt="">
+            <p>99 Today</p>
+          </div>
+        </div>
+
+        <div class="box-followers bg-gold">
+          <div class="box-followers-header">
+            <img src="./images/icon-instagram.svg" alt="facebook-icon">
+            <span>@realnathanf</span>
+          </div>
+          <div class="box-followers-body">
+            <h1 class="ig-followers"></h1>
+            <p>Followers</p>
+          </div>
+          <div class="box-followers-footer">
+            <img src="./images/icon-up.svg" alt="">
+            <p>1099 Today</p>
+          </div>
+        </div>
+
+        <div class="box-followers bg-red">
+          <div class="box-followers-header">
+            <img src="./images/icon-youtube.svg" alt="facebook-icon">
+            <span>@nathanf</span>
+          </div>
+          <div class="box-followers-body">
+            <h1 class="youtube-followers"></h1>
+            <p>Followers</p>
+          </div>
+          <div class="box-followers-footer">
+            <img src="./images/icon-down.svg" alt="">
+            <p id="col-red">144 Today</p>
+          </div>
+        </div>
+        
+      </main>
+
+      <section>
+        <div class="header-txt">
+          <h2>Overview - Today</h2>
+        </div>
+
+        <div class="analysis">
+        <div class="board">
+          <div class="views">
+            <p>Page Views</p>
+            <span class="fb-views"></span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-facebook.svg" alt="">
+            <p><img src="./images/icon-up.svg" alt="">3%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Likes</p>
+            <span id="fbLikes"></span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-facebook.svg" alt="">
+            <p id="col-red"><img src="./images/icon-down.svg" alt="">2%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Likes</p>
+            <span>5462</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-instagram.svg" alt="">
+            <p><img src="./images/icon-up.svg" alt="">2257%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Page Views</p>
+            <span>52k</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-instagram.svg" alt="">
+            <p><img src="./images/icon-up.svg" alt="">1375%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Retweets</p>
+            <span>117</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-twitter.svg" alt="">
+            <p><img src="./images/icon-up.svg" alt="">303%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Likes</p>
+            <span>507</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-twitter.svg" alt="">
+            <p><img src="./images/icon-up.svg" alt="">553%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Likes</p>
+            <span>107</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-youtube.svg" alt="">
+            <p id="col-red"><img src="./images/icon-down.svg" alt="">19%</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <div class="views">
+            <p>Total Views</p>
+            <span>1407</span>
+          </div>
+          <div class="data">
+            <img src="./images/icon-youtube.svg" alt="">
+            <p id="col-red"><img src="./images/icon-down.svg" alt="">12%</p>
+          </div>
+        </div>
+
+      </div>
+      </section>
+    </div>
+  </header>
+</body>
+</html>

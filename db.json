@@ -1,0 +1,28 @@
+{
+  "social":{
+    "facebook":{
+      "followers": "1.5k",
+      "pageViews":"8K",
+      "likes": 300
+    },
+    "twitter":{
+      "followers": 1200,
+      "pageViews": "6.3K",
+      "likes": 500
+    },
+    "instagram":{
+      "followers": 2000,
+      "pageViews": 7000,
+      "likes": 800
+    },
+    "youtube":{
+      "subscribers": 2500,
+      "totalViews": 100000,
+      "likes": 1200
+    }
+  }
+  
+  }
+
+
+  
