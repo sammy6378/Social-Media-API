@@ -116,14 +116,7 @@ main{
 }
 
 .bg-gold{
-    border-top:linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-      );
+    border-top:3.8px solid #cc2366;
 }
 .box-followers-header{
     color: #ccc;
@@ -170,7 +163,7 @@ main{
 }
 
 .dark{
-    background: #e1efe1;
+    background: #ffffff;
     transition: background 0.2s ease;
     color: #000;
 }
