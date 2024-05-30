@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function(e) {
+  const spinner = document.querySelector('.spinner');
+  if (spinner) {
+      spinner.classList.add('spinn');
+      $('.spinner').fadeIn(4000, function() {
+          setTimeout(function() {
+              $('.spinner').fadeOut(2000);
+          }, 1000);
+      });
+  }
+});
 
 // toggle dark and light
 const dark = document.getElementById('checked');
@@ -22,16 +33,20 @@ const youFollowers = document.querySelector('.youtube-followers');
    .then(response => response.json())
    .then(data => {
         const facebookData = data.social.facebook;
-            console.log(facebookData);
-            fbFollowers.innerHTML = facebookData.followers;
-            fblikes.innerHTML = facebookData.likes;
-            fbpageviews.innerHTML = facebookData.pageViews;
+            setTimeout(()=>{
+              fbFollowers.innerHTML = facebookData.followers;
+              fblikes.innerHTML = facebookData.likes;
+              fbpageviews.innerHTML = facebookData.pageViews;
+            },2000)
+            
 
             const igData = data.social.instagram;
             const youData = data.social.youtube;
-
+            setTimeout(() => {
             igFollowers.innerHTML = igData.followers;
             youFollowers.innerHTML = youData.subscribers;
+            }, 2000);
+            
           })
        .catch(error => {
             console.error('Error fetching data:', error);
